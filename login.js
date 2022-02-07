@@ -1,10 +1,10 @@
 
 
-firebase.auth().onAuthStateChange(function(user){
+firebase.auth().onAuthStateChanged(function(user){
   if(user){
 
     document.getElementById("user_div").style.display="block";
-    document.getElementById("login_div").styles.display="none";
+    document.getElementById("login_div").style.display="none";
 
     var user = firebase.auth().currentUser;
 
@@ -20,8 +20,8 @@ firebase.auth().onAuthStateChange(function(user){
 
   }
   else{
-    document.getElementById("user_div").style.display="none";
-    document.getElementById("login_div").style.display="block";
+    // document.getElementById("user_div").style.display="none";
+    // document.getElementById("login_div").style.display="block";
   }
 })
 
@@ -29,10 +29,8 @@ firebase.auth().onAuthStateChange(function(user){
 function login(){
   var email_address = document.getElementById("email_field").value;
   var password = document.getElementById("password_field").value;
-
-  firebase.auth().signInWithEmailAndPassword("email_address,password").catch(function(Error){
+  firebase.auth().signInWithEmailAndPassword(email_address,password).catch(function(error){
     console.log(error);
-
     if (username === "user" && password === "web_dev") {
       alert("You have successfully logged in.");
       location.reload();
@@ -40,10 +38,8 @@ function login(){
       loginErrorMsg.style.opacity = 1;
   }
   });
-  
 }
 
 function logout(){
   firebase.auth().signOut();
-
 }
