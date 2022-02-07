@@ -6,10 +6,6 @@
       <link rel="stylesheet" href="login.css">
       <link rel="icon" href="https://th.bing.com/th?q=Login+Icon.svg&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"></script>
    </head>
    <body>
       <div class="wrapper">
@@ -30,7 +26,7 @@
                <div class="slider-tab"></div>
             </div>
             <div class="form-inner">
-               <form class="login" id="loginForm">
+               <form   class="login">
                   <div class="field">
                      <input type="email" id="email_field" placeholder="Email Address" required>
                   </div>
@@ -84,16 +80,13 @@
            signupBtn.click();
            return false;
          });
-
-         $("#loginForm").submit((e)=>{
-            e.preventDefault();
-            login();
-         })
       
-      </script>
-      <script src= "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-      <script src= "https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script> 
-      <script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"> </script>
+      </script >
+   
+      <script src= "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script >
+      <script src= "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js"></ > 
+      <script src = "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js"> </script >
+      
        <script src ="int.js"></script>
        <script src ="login.js"></script>
    </body>
