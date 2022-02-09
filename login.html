@@ -10,10 +10,63 @@
   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
   crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6feb3c70a4.js" crossorigin="anonymous"></script>
    </head>
    
    <body>
-      
+      <style>
+         button {
+           display: inline-block;
+           background-color: #3aabbea4;
+           border-radius: 8px;
+           border: 1px #cccccc;
+           float: right;
+           color: #eeeeee;
+           text-align: center;
+           font-size:20px;
+           padding: 10px;
+           width: 100px;
+           transition: all 0.5s;
+           cursor: pointer;
+           text-shadow: 1px 1px 2px #0e0e0e;
+           margin: 4px;
+           margin-right: 890px;
+           font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         }
+         button span {
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+           transition: 0.5s;
+         }
+         button span:after {
+           content: '\00bb';
+           position: absolute;
+           opacity: 0;
+           top: 0;
+           right: -20px;
+           transition: 0.5s;
+         }
+         button:hover {
+           background-color: #fa4299;
+           box-shadow: 2px 2px 4px #0e0e0e inset;
+         }
+         button:hover span {
+           padding-right: 18px;
+         }
+         button:hover span:after {
+           opacity: 2;
+           left: 0;
+         }
+        </style>
+        <button class=button id="home"
+        <input type="home" onClick="home()"/>
+      <script>
+        function home() {
+        location.href="index.html";  
+      }
+      </script><font face="Times New Roman">Home <i class="fas fa-house-user"></i> </font></button>
+    </div>
       <div class="wrapper">
          <div class="title-text">
             <div class="title login">
