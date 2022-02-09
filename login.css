@@ -10,8 +10,11 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  background: url(https://c4.wallpaperflare.com/wallpaper/567/924/874/pink-and-purple-tulips-flowers-wallpaper-preview.jpg)no-repeat;
+  background-size: cover;
+  opacity: 0.84;
 }
+
 ::selection{
   background: #fa4299;
   color: #fff;
@@ -19,7 +22,7 @@ html,body{
 .wrapper{
   overflow: hidden;
   max-width: 390px;
-  background: #fff;
+  background: rgba(255, 254, 254, 0.835);
   padding: 25px;
   border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
