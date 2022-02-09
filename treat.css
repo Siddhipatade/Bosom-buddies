@@ -1,0 +1,110 @@
+body{
+  padding: 2ch;
+}
+.Treatment{
+    display: inline-block;
+   background-image: url(https://www.narayanahealth.org/blog/wp-content/uploads/2018/10/shutterstock_711596005-min-1170x484.jpg);
+   background-repeat: no-repeat;
+   height: 500px;
+   border-radius: 8px;
+   font-size :35px;
+   background-size: 1333px;
+   image-resolution: 1000px;
+   background-color: transparent;
+   opacity: 0.77;
+   color:black;
+   box-shadow: 2px 2px 4px #0e0e0e;
+   
+  
+}
+.Radiationtherapy{
+    background-image:url(https://www.rogelcancercenter.org/images/radiation-therapy.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 600px;
+    height: 500;
+    font-size:22px;
+    display: inline-block;
+}
+.Chemotherapy{
+  background-repeat: no-repeat;
+  background-image: url(https://moffitt.org/media/8157/nochemo.jpg);
+  background-position-x: right;
+  background-size:600px;
+  font-size:22px;
+  display: inline-block;
+}
+
+.Hormonetherapy{
+  font-size:38px;
+  background-image: url(https://4f20lz3r4bii3yfqutfxz0o17ou-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/hormone_therapy2-595x240.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 600px;
+  font-size:22px;
+  display: inline-block;
+}
+.Hormonetherapy{
+  font-size:22px;
+  background-image: url(https://4f20lz3r4bii3yfqutfxz0o17ou-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/hormone_therapy2-595x240.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 600px;
+  font-size:22px;
+  display: inline-block;
+
+}
+.Targetedtherapy{
+  font-size:22px;
+  background-image: url(https://onco.com/blog/wp-content/uploads/2019/12/breast-cancer-targeted-therapy.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 600px;
+  font-size:22px;
+  display: inline-block;
+}
+.class{
+  font-size: 22px;
+  background-color: #eee3ea;
+}
+
+.Immunotherapy{
+  background-image: url(https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs12951-020-00741-z/MediaObjects/12951_2020_741_Figa_HTML.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 600px;
+  font-size:22px;
+  display: inline-block;
+}
+.Side_effects{
+  font-size:22px;
+  background-image: url(https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2018/10/16309-effects-radiation-breast-cancer-eng-1296x2880-body-1024x880.jpg?w=1155&h=2339);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 600px;
+  height: 500;
+  font-size:22px;
+  display: inline-block;
+}
+.Healthy_diet{
+  font-size:22px;
+  display: inline-block;
+  background-image: url(https://assets.thehansindia.com/h-upload/2021/10/17/1117614-breast-cancer.webp);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 600px;
+  }
+  .Health{
+      font-size:22px;
+      background-color: #eee3ea;
+  }
+  .Breast_exam{
+    background-color: #eee3ea;
+  }
+.Visual_checkup{
+  background-image: url(https://i.insider.com/5fe3cc19a6448800181933e1?width=750&format=jpeg&auto=webp);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position-x: right;
+  background-size: 600px;
+}

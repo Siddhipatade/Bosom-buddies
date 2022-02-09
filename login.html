@@ -34,7 +34,7 @@
                   <div class="field">
                      <input type="email" id="email_field" placeholder="Email Address" required>
                   </div>
-                  <div class="field">
+                  <div class="field" >
                      <input type="password" id="password_field" placeholder="Password" required>
                   </div>
                   <div class="pass-link">
@@ -48,7 +48,7 @@
                      Not a member? <a href="">Sign up now</a>
                   </div>
                </form>
-               <form  class="signup">
+               <form  class="signup" id="signupForm">
                   
                   <div class="field">
                      <input type="user" id="username_" placeholder="Username" required>
@@ -89,11 +89,15 @@
             e.preventDefault();
             login();
          })
-      
+         $("#signupForm").submit((e)=>{
+            e.preventDefault();
+            signup();
+         })
+               
       </script>
-      <script src= "https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-      <script src= "https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script> 
-      <script src = "https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"> </script>
+      <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+      <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+      <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytic.js"></script>
        <script src ="int.js"></script>
        <script src ="login.js"></script>
    </body>

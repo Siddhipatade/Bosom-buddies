@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="icon" href="bb.svg" width="50" height="30">
+    <title>Bosom Buddies</title>
+    <link rel="stylesheet" href="doclist.css">
+    <script src="https://kit.fontawesome.com/6feb3c70a4.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        h3 span {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color:white;
+            font-weight: bold;
+
+        }
+        h3 input.search-input {
+            width: 300px;
+            margin-left: auto;
+            float: right;
+            color: black;
+            background-color: white;
+            font-weight: bold;
+        }
+
+        .button-2 a{
+            width: 260px;
+            margin-left: 25px;
+            float: right;
+            
+            font-weight: bold;
+        }
+
+        .button-1 a{
+            margin-top: auto;
+            width: 100px;
+            margin-left: 40px;
+            float: right;
+        }
+
+        .mt32 {
+            margin-top: 32px;
+            background-color: #642c6d;
+        } 
+        .table {
+            background-color: rgba(0, 0, 0, 0.472);
+           
+            color: white;
+
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/6feb3c70a4.js" crossorigin="anonymous"></script>
+</head>
+<body class="mt32">
+    <div class="container">
+        <div class="button-1">
+            <a href="home.html" class="btn btn-info" role="button">Home <i class="fas fa-house-user"></i></a>
+        </div>
+
+        <div class="button-2"><a href="form.html" class="btn btn-secondary" role="button">Book an Appointment</a></div>
+        
+
+           
+        
+       <h3>
+            <span>List of Doctors </span>
+            <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+        </h3>
+        <table class="table table-striped mt32 customers-list">
+            <thead>
+                <tr>
+                    <th>Appointment Timing</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Postal Code</th>
+                    <th>Hospital</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9-10am</td>
+                    <td>Janhvi</td>
+                    <td>janhvi0507kamble@gmail.com</td>
+                    <td>050214</td>
+                    <td>Ger Hospital</td>
+                </tr>
+                <tr>
+                    <td>2-5pm</td>
+                    <td>Karina</td>
+                    <td>karikhambe@gmail.com</td>
+                    <td>12209</td>
+                    <td>Me Hospital</td>
+                </tr>
+                <tr>
+                    <td>3-8pm</td>
+                    <td>Anjali</td>
+                    <td>03anjalipathak@gmail.com</td>
+                    <td>05021</td>
+                    <td>lt Hospital</td>
+                </tr>
+                <tr>
+                    <td>1-8pm</td>
+                    <td>Siddhi</td>
+                    <td>patadesiddhi20@gmail.com</td>
+                    <td>442401</td>
+                    <td>United Hospital</td>
+                </tr>
+                <tr>
+                    <td>5-10pm</td>
+                    <td>Rohan</td>
+                    <td>patadesiddhi851@gmail.com</td>
+                    <td>958322</td>
+                    <td>Sw Hospital</td>
+                </tr>
+                <tr>
+                    <td>6-8pm</td>
+                    <td>Rutuja</td>
+                    <td>rutuja67@gmail.com</td>
+                    <td>810025</td>
+                    <td>Ind Hospital</td>a
+                </tr>
+                <tr>
+                    <td>7-9pm</td>
+                    <td>Aayush</td>
+                    <td>aayush.10@gmail.com</td>
+                    <td>440458</td>
+                    <td>United Hospital</td>
+                </tr>
+                <tr>
+                    <td>4-5pm</td>
+                    <td>Mira</td>
+                    <td>Miraj@gmail.com</td>
+                    <td>442401</td>
+                    <td>CHL Hospital</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+body {
+  margin: 4px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  background: #dfc1e0;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+h1{
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 200px;
+    background-color: rgb(189, 54, 177);
+    padding: 6px;
+    margin-right: 6px;
+    margin-left: 6px;
+    box-shadow: 2px 2px 4px #0e0e0e ;
+   
+    color: white;
+  }
+.h2{
+    margin-right: 60px;
+    margin-left: 40px;
+
+}
+.para-a {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+.para-a .image-a {
+  float: left;
+  margin-left: 20px;
+  margin-right: 40px;
+  box-shadow: 2px 2px 4px #0e0e0e ;
+}
+.para-a p {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.para-b {
+  font-size: 20px;
+}
+.para-b .image-b {
+  float: right;
+  margin-left: 40px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 4px #0e0e0e ;
+  
+  
+}
+.para-c {
+  height: 400px;
+  background-color: rgb(229, 160, 231); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(231, 190, 233), rgb(216, 144, 210));
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 4px #0e0e0e inset;
+  padding: 15px;
+}
+.para-c ul li {
+  font-size: 22px;
+  text-align: left;
+  justify-content: center;
+}

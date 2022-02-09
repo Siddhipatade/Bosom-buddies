@@ -1,0 +1,63 @@
+body{
+    margin: 4px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(232, 193, 220);
+    
+
+}
+h1{
+    text-align: center;
+    font: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #b122ca;
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+   
+}
+h3{
+    font: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+.para2 p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.para2 p a{
+    font-weight: bold;
+   
+}
+
+.image-a{
+    float:left ;
+    margin-left: 30px;
+    margin-right: 100px;
+    box-shadow: 2px 2px 4px #0e0e0e;
+}
+.image{
+    float: right;
+    
+}
+.imageb{
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 0.85;
+    box-shadow: 2px 2px 4px #0e0e0e;
+}
+.imagec{
+    margin-left: 200px;
+    margin-right: 500px;
+    opacity: 0.85;
+   
+    
+}
+.para-z{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}

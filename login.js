@@ -1,5 +1,3 @@
-
-
 firebase.auth().onAuthStateChanged(function(user){
   if(user){
 
@@ -14,9 +12,7 @@ firebase.auth().onAuthStateChanged(function(user){
 
 
       document.getElementById("user_name_from_database").value = uname;
-      document.getElementById("user_email_from_database").value=email_id;
-      document.getElementById("profilepic").src = dp_url;
-    }
+      document.getElementById("user_email_from_database").value= email_id;
 
   }
   else{
@@ -31,9 +27,23 @@ function login(){
   var password = document.getElementById("password_field").value;
   firebase.auth().signInWithEmailAndPassword(email_address,password).catch(function(error){
     console.log(error);
-    if (username === "user" && password === "web_dev") {
+    if (username === "user" && password === "Arf@78dd") {
       alert("You have successfully logged in.");
-      location.reload();
+      location.href="home.html";
+  } else {
+      loginErrorMsg.style.opacity = 1;
+  }
+  });
+}
+
+function signup(){
+  var email_address = document.getElementById("email_field").value;
+  var password = document.getElementById("password_field").value;
+  firebase.auth().signInWithEmailAndPassword(email_address,password).catch(function(error){
+    console.log(error);
+    if (username === "user" && password === "Arf@78dd") {
+      alert("You have successfully logged in.");
+      location.href="home.html";
   } else {
       loginErrorMsg.style.opacity = 1;
   }
