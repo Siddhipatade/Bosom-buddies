@@ -51,6 +51,7 @@
     position:absolute;
     text-shadow: 2px 2px 6px #0e0e0e;
     float: right;
+    display: flex;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 50px;
     margin-top: 150px;
@@ -71,8 +72,9 @@
 
   #cf {
     position:absolute;
-    height:281px;
-    width:450px;
+    height:281vh;
+    width:450vw;
+    display: flex;
     margin: 5px auto;
     
   }
