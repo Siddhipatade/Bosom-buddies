@@ -1,5 +1,7 @@
 body{
-  padding: 2ch;
+  padding: 0;
+  margin: 0;
+
 }
 .Treatment{
     display: inline-block;

@@ -1,4 +1,8 @@
 
+body{
+    margin: 0;
+    padding: 0;
+}
 .header1{
     padding: 12px;
     box-shadow: #ae00ff;
